@@ -1,0 +1,22 @@
+version: '0.1'
+guardians:
+  - chain: acala
+    network: ${NETWORK}
+    monitors:
+      - task: system.events
+        arguments:
+          name: auctionManager.CollateralAuctionDealt
+        conditions:
+          - args.winner: eq ${ADDRESS}
+        actions:
+          - method: collateral_auction_dealt # do not change
+
+      - task: honzon.collateralAuctions
+        arguments:
+          account: all
+          currencyId: all
+        conditions:
+          - lastBidder: ne ${ADDRESS}
+        actions:
+          - method: collateral_auction_created # do not change
+            margin: ${MARGIN}
