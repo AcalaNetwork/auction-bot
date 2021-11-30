@@ -28,9 +28,7 @@
     "@open-web3/guardian": "0.4.5-15",
     "@open-web3/guardian-cli": "0.4.5-15",
     "@open-web3/util": "^1.0.2-2",
-    "dotenv": "^10.0.0"
-  },
-  "devDependencies": {
+    "dotenv": "^10.0.0",
     "@open-web3/dev-config": "^0.1.13",
     "@types/big.js": "^6.1.2",
     "@types/chai": "^4.2.22",
