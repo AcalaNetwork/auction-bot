@@ -4,6 +4,9 @@
   "description": "Collateral auction bot",
   "author": "Laminar Developers <hello@laminar.one>",
   "license": "Apache-2.0",
+  "bin": {
+    "auction-bot": "./bin/auction-bot"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
