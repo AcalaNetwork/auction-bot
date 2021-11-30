@@ -42,7 +42,7 @@
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "start": "ts-node --transpile-only src/scripts/run.ts",
+    "start": "bin/auction-bot",
     "test": "NODE_ENV=test mocha -r ts-node/register/transpile-only --timeout 50000 --no-warnings \"./{,!(node_modules)/**}/*.test.{js,ts}\" --exit",
     "lint": "eslint --fix ."
   }

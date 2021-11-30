@@ -1,0 +1,6 @@
+#!/usr/bin/env -S npx ts-node
+
+require('../src').default().catch((error) => {
+  console.error(error);
+  process.exit(-1);
+});
