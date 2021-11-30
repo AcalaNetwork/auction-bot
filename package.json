@@ -29,7 +29,8 @@
     "@open-web3/guardian-cli": "0.4.5-15",
     "@open-web3/util": "^1.0.2-2",
     "dotenv": "^10.0.0",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
     "@open-web3/dev-config": "^0.1.13",
@@ -41,8 +42,7 @@
     "@types/node": "^16.11.9",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
-    "mocha": "^9.1.3",
-    "typescript": "^4.4.4"
+    "mocha": "^9.1.3"
   },
   "scripts": {
     "start": "bin/auction-bot",
