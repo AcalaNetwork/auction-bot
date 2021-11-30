@@ -14,7 +14,7 @@ export type Metadata = {
   action: { margin: number };
 };
 
-export default async () => {
+const main = async () => {
   const { address, SURI } = config();
   const { signer } = await setupKeyring(SURI, address);
 
@@ -65,3 +65,8 @@ export default async () => {
   // start guardian
   require('@open-web3/guardian-cli');
 };
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(-1);
+});
