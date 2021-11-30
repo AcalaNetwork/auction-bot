@@ -11,5 +11,8 @@
         "skipLibCheck": true,
         "strict": true,
         "target": "ES2018"
+    },
+    "ts-node": {
+        "transpileOnly": true
     }
 }
